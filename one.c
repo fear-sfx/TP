@@ -7,12 +7,18 @@ int main(){
 	
 	printf("Enter x : ");
 	scanf("%d", &x);
-	
-	
+	do{
+//		system("clear");
 		printf("Enter y>x : ");
 		scanf("%d", &y);
-		
-	s = x / y;
+	}while(x>=y);
+	
+	int i;
+	for(i=x; i<=y; i++){
+		if(i%2 != 0){
+			s += i;
+		}
+	}
 	
 	printf("Result : %d \n", s);
 
