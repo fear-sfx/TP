@@ -21,17 +21,17 @@ void main(){
 	do{
 		printf("y=");
 		scanf("%d", &y);
-	}while( x < 0 );
+	}while( y < 0 );
 	
 	do{
 		printf("w=");
 		scanf("%d", &w);
-	}while( x < 0 );
+	}while( w < 0 );
 	
 	do{
 		printf("h=");
 		scanf("%d", &h);
-	}while( x < 0 );
+	}while( h < 0 );
 	
 	
 	int pcs, flag;
