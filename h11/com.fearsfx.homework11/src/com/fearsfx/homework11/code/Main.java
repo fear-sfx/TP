@@ -1,3 +1,11 @@
+// Технологично училище Електронни системи - http://www.elsys-bg.org/
+// клас : 11б
+// номер : 27
+// име : Тодор Руменов Маноилов
+// задача : Да се разработи програма, която да симулира контейнер с даден размер и топки,
+// които да могат да бъдат вкарвани и изкарвани от него. Да може да се изпразни и да се 
+// изведе моментно състояние на контейнера.
+
 package com.fearsfx.homework11.code;
 
 public class Main {
@@ -10,6 +18,12 @@ public class Main {
 		Ball ball1 = new Ball();						// ball without set name 
 		Ball ball2 = new Ball("whut?!");				// ball with set name
 		
+		System.out.println(ball1.GetName());			// print ball default name
+		System.out.println(ball2.GetName());			// print ball set name
+		
+		ball1.SetName("Right");
+		System.out.println(ball1.GetName());			// print ball changed name
+						
 		System.out.println(box.size());					// auto sized
 		System.out.println(box1.size());				// set size
 		
