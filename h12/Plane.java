@@ -79,8 +79,10 @@ public class Plane {
 		int count = 0;
 		for(int i = 0; i<27; i++){
 			for(int j = 0; j < 6; j++){
-				if(seats[j][i].getGender() == "Man"){
-					count++;
+				if(seats[j][i] != null){
+					if(seats[j][i].getGender() == "Man"){
+						count++;
+					}
 				}
 			}
 		}
@@ -90,8 +92,10 @@ public class Plane {
 		int count = 0;
 		for(int i = 0; i<27; i++){
 			for(int j = 0; j < 6; j++){
-				if(seats[j][i].getGender() == "Woman"){
-					count++;
+				if(seats[j][i] != null){
+					if(seats[j][i].getGender() == "Woman"){
+						count++;
+					}
 				}
 			}
 		}
