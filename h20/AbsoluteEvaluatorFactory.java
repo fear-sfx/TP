@@ -4,26 +4,26 @@ public class AbsoluteEvaluatorFactory implements IEvaluatorFactory {
 
 	@Override
 	public IEvaluator createSumEvaluator() {
-		// TODO Auto-generated method stub
-		return null;
+		IEvaluator eval = new SumEvaluator(1);
+		return eval;
 	}
 
 	@Override
 	public IEvaluator createPowerOnEvaluator() {
-		// TODO Auto-generated method stub
-		return null;
+		IEvaluator eval = new PowerOnEvaluator(1);
+		return eval;
 	}
 
 	@Override
 	public IEvaluator createPowerOnEvaluator(double power) {
-		// TODO Auto-generated method stub
-		return null;
+		IEvaluator eval = new PowerOnEvaluator(1, power);
+		return eval;
 	}
 
 	@Override
 	public IEvaluator createFibonaciEvaluator() {
-		// TODO Auto-generated method stub
-		return null;
+		IEvaluator eval = new FibonaciEvaluator(1);
+		return eval;
 	}
 
 }

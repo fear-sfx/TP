@@ -2,34 +2,26 @@ package com.fearsfx.elsys.interclass2;
 
 import java.util.*;
 
-public class Evaluator implements IEvaluator {
+public abstract class Evaluator implements IEvaluator {
 
-	private List<Double> list = new ArrayList<Double>();
+	protected List<Double> list = new ArrayList<Double>();
+	protected Integer kind;
+	
+	public Evaluator(int kind){
+		this.kind = kind;
+	}
 	
 	@Override
 	public void add(double d) {
-		list.add(d);		
-	}
-	
-	
-	
-	@Override
-	public Double evaluate() {
-		double res=0;
-		for(Double d : list){
-			res += d;
+		switch(this.kind){
+			case 1: list.add(Math.abs(d));
+					break;
+			case 2: list.add(d);
+					break;
 		}
-		return res;
 	}
-
-
+	
 	@Override
-	public Double action() {
-		
-		return null;
-	}
-
-
-
+	abstract public Double evaluate();
 
 }

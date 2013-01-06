@@ -2,34 +2,28 @@ package com.fearsfx.elsys.interclass2;
 
 public class DirectEvaluatorFactory implements IEvaluatorFactory {
 
-	private Evaluator eval;
-	
 	@Override
 	public IEvaluator createSumEvaluator() {
-		eval = new SumEvaluator();
+		IEvaluator eval = new SumEvaluator(2);
 		return eval;
 	}
 
 	@Override
 	public IEvaluator createPowerOnEvaluator() {
-		// TODO Auto-generated method stub
-		return null;
+		IEvaluator eval = new PowerOnEvaluator(2);
+		return eval;
 	}
 
 	@Override
 	public IEvaluator createPowerOnEvaluator(double power) {
-		// TODO Auto-generated method stub
-		return null;
+		IEvaluator eval = new PowerOnEvaluator(2, power);
+		return eval;
 	}
 
 	@Override
 	public IEvaluator createFibonaciEvaluator() {
-		// TODO Auto-generated method stub
-		return null;
+		IEvaluator eval = new FibonaciEvaluator(2);
+		return eval;
 	}
 	
-	public static void main(){
-		DirectEvaluatorFactory asd = new DirectEvaluatorFactory();
-	}
-
 }

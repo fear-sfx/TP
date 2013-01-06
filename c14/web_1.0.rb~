@@ -98,11 +98,11 @@ puts
 page_test = Page.new
 puts ("Page URL : " + page_test.get_url.to_s)
 puts ("Page links num : " + page_test.get_links.to_s)
-puts ("Page links :\n"); page_test.show_links
+#puts ("Page links :\n"); page_test.show_links
 #puts ("Page contents :\n" + page_test.get_content)
 
 puts
 site_test = Site.new
-#puts ("Site URL : " + site_test.get_url)
-#puts ("Site protocol : " + site_test.get_protocol)
-#puts ("Site pages num : " + site_test.get_pages.to_s)
+puts ("Site URL : " + site_test.get_url)
+puts ("Site protocol : " + site_test.get_protocol)
+puts ("Site pages num : " + site_test.get_pages.to_s)
