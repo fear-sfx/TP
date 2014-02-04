@@ -1,7 +1,7 @@
 require "csv"
 
-file_name = gets.chomp
-
+№file_name = gets.chomp
+file_name = ARGV[0]
 x = Array.new(50) {0}
 y = Array.new(50) {0}
 i = 0
